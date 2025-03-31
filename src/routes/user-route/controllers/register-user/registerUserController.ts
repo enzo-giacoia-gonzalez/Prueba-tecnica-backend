@@ -9,6 +9,8 @@ export const registerUserController = async (req: Request, res: Response) => {
             message: "Usuario creado",
         });
     } catch (error) {
-        res.status(400).json({ error: (error as Error).message });
+        res.status(400).json({
+            message:'Error al crear el usuario',
+        });
     }
 };

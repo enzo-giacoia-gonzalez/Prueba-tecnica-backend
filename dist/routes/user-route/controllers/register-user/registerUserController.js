@@ -19,7 +19,9 @@ const registerUserController = (req, res) => __awaiter(void 0, void 0, void 0, f
         });
     }
     catch (error) {
-        res.status(400).json({ error: error.message });
+        res.status(400).json({
+            message: 'Error al crear el usuario',
+        });
     }
 });
 exports.registerUserController = registerUserController;
